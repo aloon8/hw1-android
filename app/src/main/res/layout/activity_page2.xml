@@ -1,46 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context=".page2">
+    android:orientation="vertical"
+    android:background="#0F000000">
 
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/appbar"
+
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/appbar_padding_top"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="220dp">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:layout_weight="1"
-            android:background="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|enterAlways"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:title="@string/app_name">
+            android:layout_height="200dp"
+            android:src="@drawable/galgadot"
+            android:scaleType="fitXY"/>
 
-        </android.support.v7.widget.Toolbar>
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/likeBtn"
+            android:layout_gravity="bottom|right"
+            android:background="@drawable/round_button"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:id="@+id/score"
+            android:layout_gravity="bottom|left"
+            android:text="0"
+            android:gravity="center"
+            android:background="#00000000"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
 
-    </android.support.design.widget.AppBarLayout>
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/container"
+    </FrameLayout>
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        android:layout_height="200dp">
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        <ImageView
+            android:id="@+id/imgCall"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="50sp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/call" />
 
-</android.support.design.widget.CoordinatorLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="70sp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="2dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="+972 (52) 5554443"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="70sp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="2dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Mobile"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="70sp"
+            android:layout_marginTop="130dp"
+            android:layout_marginBottom="2dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="+972 (52) 5554443"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="70sp"
+            android:layout_marginTop="155dp"
+            android:layout_marginBottom="2dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Work"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="25sp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/email" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="70sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="2dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="galGadot@gmail.com"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="70sp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="2dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Personal"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

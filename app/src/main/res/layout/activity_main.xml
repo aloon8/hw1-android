@@ -12,12 +12,12 @@
     <Button
         android:layout_width="200sp"
         android:layout_height="wrap_content"
-        android:text="MORAN ATIAS"
+        android:text="Moran Atias"
         android:onClick="page1"/>
     <Button
         android:layout_width="200sp"
         android:layout_height="wrap_content"
-        android:text="Page2"
+        android:text="Gal Gadot"
         android:onClick="page2"/>
     <Button
         android:layout_width="200sp"
