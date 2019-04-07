@@ -17,11 +17,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class page1 extends AppCompatActivity {
 
-    Button btn;
+    ImageButton btn;
     TextView tView;
     int likes = 0;
 
@@ -31,7 +32,7 @@ public class page1 extends AppCompatActivity {
         setContentView(R.layout.activity_page1);
 
         tView = (TextView) findViewById(R.id.like_box);
-        btn = (Button) findViewById(R.id.button1);
+        btn =  findViewById(R.id.button1);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
