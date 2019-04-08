@@ -28,6 +28,7 @@
         android:layout_marginTop="230dp"
         android:layout_marginLeft="290dp"
         android:layout_gravity="bottom|right"
+        android:layout_marginLeft="290dp"
         android:background="@drawable/round_button"
         android:textColor="@android:color/white"
         android:textSize="18sp" />

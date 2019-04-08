@@ -20,9 +20,9 @@
             android:scaleType="fitXY"/>
 
         <ImageButton
+            android:id="@+id/likeBtn"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:id="@+id/likeBtn"
             android:layout_gravity="bottom|right"
             android:background="@drawable/round_button"
             android:textColor="@android:color/white"
@@ -92,6 +92,7 @@
             android:text="+972 (52) 5554443"
             android:textSize="20sp"
             android:textStyle="bold" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
