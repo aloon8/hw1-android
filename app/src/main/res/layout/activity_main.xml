@@ -32,7 +32,7 @@
     <Button
         android:layout_width="200sp"
         android:layout_height="wrap_content"
-        android:text="Page5"
+        android:text="Shahar Hason"
         android:onClick="page5"/>
 
 </LinearLayout>
