@@ -1,46 +1,198 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_content"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context=".page5">
+    android:layout_width="match_parent">
 
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/appbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/appbar_padding_top"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:layout_weight="1"
-            android:background="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|enterAlways"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:title="@string/app_name">
-
-        </android.support.v7.widget.Toolbar>
-
-    </android.support.design.widget.AppBarLayout>
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/container"
+    <LinearLayout
+        android:weightSum="2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        android:orientation="vertical"
+        >
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        <RelativeLayout
+            android:id="@+id/topRelativeLayout"
+            android:layout_weight="1"
+            android:background="@drawable/shahar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
 
-</android.support.design.widget.CoordinatorLayout>
+            <RelativeLayout
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/hamburgetIcon"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/white"
+                    android:background="@drawable/humburgericon"/>
+
+                <View
+                    android:layout_toLeftOf="@id/hamburgetIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/white"
+                    android:background="@drawable/pencilicon"/>
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/arrow" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:background="#99000000"
+                android:fontFamily="cursive"
+                android:padding="15dp"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textAlignment="center"
+                android:text="שחר חסון"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:onClick="like"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/love"
+                android:scaleType="centerCrop"
+                android:tint="@color/white"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/email"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:fontFamily="casual"
+                            android:layout_marginBottom="15dp"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:textAlignment="center"
+                            android:text="email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:fontFamily="casual"
+                            android:layout_marginBottom="15dp"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:text="nevizada00@gmail.com"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_marginBottom="15dp"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:text="nevizada007@gmail.com"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:fontFamily="casual"
+                            android:layout_marginBottom="15dp"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textAlignment="center"
+                            android:text="dfhdfjs@gmail.com"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <View
+                            android:adjustViewBounds="true"
+                            android:backgroundTint="@color/gray"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/line"/>
+
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/phone"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_marginBottom="15dp"
+                            android:textColor="@color/gray"
+                            android:textSize="15dp"
+                            android:textAlignment="center"
+                            android:text="phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/Phonenumberone"
+                            android:layout_marginBottom="15dp"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textAlignment="center"
+                            android:text="054944270"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginBottom="15dp"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textAlignment="center"
+                            android:text="11111111"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
