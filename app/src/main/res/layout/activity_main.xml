@@ -27,7 +27,7 @@
     <Button
         android:layout_width="200sp"
         android:layout_height="wrap_content"
-        android:text="Page4"
+        android:text="megan fox"
         android:onClick="page4"/>
     <Button
         android:layout_width="200sp"
