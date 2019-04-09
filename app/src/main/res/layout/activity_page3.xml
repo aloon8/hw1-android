@@ -36,14 +36,14 @@
             android:background="@android:color/background_light"
             android:gravity="center"
             android:text="0"
-            android:textSize="30sp" />
+            android:textSize="18sp" />
 
         <ImageButton
             android:id="@+id/likebutton"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:layout_gravity="bottom|center_horizontal|top|left"
-            android:layout_marginLeft="190dp"
+            android:layout_marginLeft="150sp"
             android:background="@drawable/round_button"
             android:textColor="@android:color/background_dark"
             android:textSize="18sp" />
@@ -59,9 +59,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="41dp"
-            android:paddingStart="100dp"
+            android:paddingStart="70sp"
             android:text="Hobbies:  Movies"
-            android:textSize="30sp" />
+            android:textSize="18sp" />
 
     </LinearLayout>
 
@@ -81,9 +81,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="41dp"
-            android:paddingLeft="50dp"
+            android:paddingLeft="20sp"
             android:text="(050) 123-4567 "
-            android:textSize="30sp" />
+            android:textSize="18sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -94,9 +94,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="41sp"
-            android:paddingLeft="100dp"
+            android:paddingLeft="70sp"
             android:text="Mobile"
-            android:textSize="24sp"
+            android:textSize="18sp"
             android:visibility="visible" />
 
     </LinearLayout>
@@ -111,16 +111,16 @@
         <ImageView
             android:layout_width="48dp"
             android:layout_height="41dp"
-            android:layout_marginEnd="45dp"
+            android:layout_marginEnd="20sp"
             android:background="@drawable/email"
             android:tint="#b4b4b4" />
 
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="41dp"
-            android:text="AngelinaJ@gmail.com "
-            android:textSize="30sp" />
+            android:text="AngelinaJ@gmail.com"
+            android:textSize="18sp" />
 
     </LinearLayout>
 

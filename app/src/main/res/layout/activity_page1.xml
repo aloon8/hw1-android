@@ -17,7 +17,7 @@
         android:layout_height="50sp"
         android:layout_marginLeft="290sp"
         android:text="0"
-        android:textSize="30sp"
+        android:textSize="18sp"
         android:gravity="center"
         android:background="#0000ff"/>
 
@@ -28,7 +28,6 @@
         android:layout_marginTop="230dp"
         android:layout_marginLeft="290dp"
         android:layout_gravity="bottom|right"
-        android:layout_marginLeft="290dp"
         android:background="@drawable/round_button"
         android:textColor="@android:color/white"
         android:textSize="18sp" />
@@ -37,7 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="40sp"
         android:text="Hobbies:  writing"
-        android:textSize="30sp"
+        android:textSize="18sp"
         android:paddingLeft="50sp"
         android:layout_marginTop="280sp"
         android:layout_marginLeft="10sp" />
@@ -47,7 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="40sp"
         android:text="(052) 555-5555"
-        android:textSize="30sp"
+        android:textSize="18sp"
         android:paddingLeft="50sp"
         android:layout_marginTop="330sp"
         android:layout_marginLeft="10sp"/>
@@ -64,7 +63,7 @@
         android:layout_width="match_parent"
         android:layout_height="40sp"
         android:text="Mobile"
-        android:textSize="30sp"
+        android:textSize="18sp"
         android:paddingLeft="50sp"
         android:layout_marginTop="375sp"
         android:layout_marginLeft="10sp"/>
@@ -75,7 +74,7 @@
         android:layout_width="match_parent"
         android:layout_height="40sp"
         android:text="Moran_Atias@gmail.com"
-        android:textSize="30sp"
+        android:textSize="18sp"
         android:paddingLeft="50sp"
         android:layout_marginTop="430sp"
         android:layout_marginLeft="10sp"/>
@@ -92,7 +91,7 @@
         android:layout_width="match_parent"
         android:layout_height="40sp"
         android:text="Email"
-        android:textSize="30sp"
+        android:textSize="18sp"
         android:paddingLeft="50sp"
         android:layout_marginTop="465sp"
         android:layout_marginLeft="10sp"/>
